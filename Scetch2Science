@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch to Science - Your Ideas, Illustrated</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e2e2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #e60023;
+            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e60023;
+        }
+
+        .pricing {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background-color: #fff5f8;
+            font-size: 1.2rem;
+            color: #e60023;
+            border: 1px solid #f1e1e6;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .email-signup {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background-color: #e6f4f1;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #d1e7e1;
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.5s ease;
+        }
+
+        .email-signup:hover {
+            transform: translateY(-5px);
+        }
+
+        .email-signup input[type="email"] {
+            padding: 0.75rem;
+            width: calc(100% - 120px);
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .email-signup button {
+            padding: 0.75rem 1rem;
+            background-color: #e60023;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .email-signup button:hover {
+            background-color: #cc0020;
+        }
+
+        .contact {
+            margin-top: 2rem;
+            font-size: 1.3rem;
+            animation: fadeIn 2s ease-in-out;
+            transition: transform 0.5s ease;
+        }
+
+        .contact:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact a {
+            color: #e60023;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .pricing,
+            .contact,
+            .email-signup {
+                font-size: 1.1rem;
+            }
+
+            .email-signup input[type="email"] {
+                width: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SKETCH TO SCIENCE</h1>
+        <p><span class="highlight">Turn Your Ideas into Eye-Popping Scientific Illustrations!</span></p>
+        <p>Got a brilliant concept but struggling to put it on paper? Let me do the heavy lifting—while you focus on the science, I'll create jaw-dropping visuals that bring your ideas to life. No more stick figures in your presentations!</p>
+
+        <div class="pricing">
+            <p><strong>What’s the Damage?</strong></p>
+            <p>Not much! While the pros might charge you an arm and a leg (50€/h, anyone?), I'm here to make sure your wallet stays happy. My rates are a steal at just 15€/h or about 100 € per piece. Need a bulk order? Let's chat discounts! No hidden fees, just awesome illustrations.</p>
+        </div>
+
+
+        <div>
+          <p style="line-height: 5;"> Here are some examples of my work so you know what to expect: </p>
+        </div>
+
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <!-- Local image inclusion -->
+                <img src="CRISPER-CAS-MECHANISMUS-KATHARINA_VWA-Kopie-Kopie.jpg" alt="Stunning Scientific Illustration 1">
+            </div>
+            <div class="gallery-item">
+                <img src="David _Science_Art_Project1(2).jpg" alt="Stunning Scientific Illustration 2">
+            </div>
+            <div class="gallery-item">
+                <img src="mückenvererbung_katharina_vwa-Kopie-Kopie.jpg" alt="Stunning Scientific Illustration 3">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="viruszyklus_vwa_katharina-Kopie-Kopie.jpg" alt="Stunning Scientific Illustration 5">
+            </div>
+            <div class="gallery-item">
+                <img src="CRISPERMECHANISMUS_KATHARINA_VWA-Kopie-Kopie.jpg" alt="Stunning Scientific Illustration 4">
+            </div>
+        </div>
+
+
+        <div class="email-signup">
+            <p><strong>Don’t Miss Out—Get Exclusive Offers!</strong></p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+         
+        <div>
+          <p style="line-height: 5;"> Want to start right now? </p>
+        </div>
+
+        <div class="contact">
+            <p>Let’s Get in Touch: <a href="mailto:Martin.Estermann@ist.ac.at">Martin.Estermann@ist.ac.at</a></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('mousemove', function (e) {
+            const elements = document.querySelectorAll('.container, .gallery-item, .email-signup, .contact');
+            const moveX = (e.clientX / window.innerWidth) - 0.5;
+            const moveY = (e.clientY / window.innerHeight) - 0.5;
+
+            elements.forEach(element => {
+                element.style.transform = `translate(${moveX * 10}px, ${moveY * 10}px)`;
+            });
+        });
+    </script>
+</body>
+
+</html>
